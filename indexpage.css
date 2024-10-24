@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a ;
+}
+img{
+    cursor: pointer;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2% ;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+
+}
+
+    .navleft {
+        display: flex;
+        align-items: center; 
+    }
+
+    
+    .navright {
+        display: flex; 
+        align-items: center; 
+    }
+    .navmiddle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+.searchbox-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    /* overflow: hidden; */
+    width: 550px;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn i {
+    font-size: 18px;
+    color: #5a5a5a; 
+}
+
+
+.micicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; 
+    width: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.micicon i {
+    color: #5a5a5a;
+    font-size: 18px;
+}
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
+    overflow-y: auto;
+    padding: 20px 10px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .links div {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sidebar .links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sidebar .links div:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Section titles */
+.section-title {
+    margin: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(15,15,15);
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid #e6e6e6;
+    margin: 10px 0;
+}
+/* footer  */
+.footer-links {
+    font-size: 12px;
+    color: #606060;
+    line-height: 1.5;
+    margin: 20px 15px;
+}
+
+/* Content section */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+}
+/* Suggestion tabs */
+.tabs-container {
+    margin-left: 220px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+
+.tab {
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border: none;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+/* Content section (video thumbnails) */
+.content {
+    margin-left: 220px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.video-thumbnail {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-thumbnail h3 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.video-thumbnail p {
+    color: #777;
+    font-size: 14px;
+}
+.shorts-section {
+    margin-bottom: 40px;
+    padding-left: 255px;
+}
+.shorts-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.shorts-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.shorts-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.shorts-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.short-card {
+    width: 160px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.short-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.short-title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.short-views {
+    font-size: 12px;
+    color: #606060;
+}
+
+.shorts-container {
+    padding-bottom: 10px;
+}
+
+.shorts-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.shorts-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
